@@ -2025,3 +2025,31 @@ select:focus-visible {
 .text-center {
     text-align: center;
 }
+
+.form-success {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-success[hidden] {
+    display: none;
+}
+
+.form-success-content {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
