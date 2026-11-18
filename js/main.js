@@ -648,3 +648,16 @@ function initThemeToggle() {
     });
 
 }
+
+const form = document.querySelector("form");
+const success = document.getElementById("formSuccess");
+const closeSuccess = document.getElementById("closeSuccess");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    success.hidden = false;
+});
+
+closeSuccess.addEventListener("click", () => {
+    success.hidden = true;
+});
